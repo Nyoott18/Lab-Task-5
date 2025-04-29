@@ -1,0 +1,160 @@
+<!-- PROJECTS PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTMK - Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Include jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #1d1d1d;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    /* Right-Aligned Navigation Bar */
+    .navbar-right {
+      position: fixed;
+      top: 10%;
+      right: 0;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px 0 0 10px;
+    }
+
+    .navbar-right a {
+      display: block;
+      margin-bottom: 15px;
+      color: #007BFF;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .navbar-right a:hover {
+      color: #0056b3;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+
+    .project-card img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #fff;
+      font-size: 14px;
+      color: #555;
+      margin-top: 50px;
+    }
+  </style>
+
+  <!-- Include jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <!-- Main Page Wrapper for jQuery Mobile -->
+  <div data-role="page">
+
+    <!-- Right-Aligned Navigation Bar -->
+    <div class="navbar-right">
+      <a href="index.html" data-role="button">HOME</a>
+      <a href="about.html" data-role="button">ABOUT</a>
+      <a href="projects.html" class="active" data-role="button">PROJECTS</a>
+      <a href="contact.html" data-role="button">CONTACT</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyv4Nw0BIjqcgF-J1VsyBbg3NfMots20uQQ&s" alt="JTMK Logo">
+        JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 style="text-align:center;">Our Creative Projects</h2>
+
+      <div class="project-card">
+        <img src="https://www.uniqode.com/blog/wp-content/uploads/2023/07/How-to-create-a-free-QR-Code-for-attendance.png" alt="Smart Attendance System">
+        <h3>Smart Attendance System Using QR Codes</h3>
+        <p>This system allows students to scan a QR code to record their attendance, reducing manual paperwork and streamlining records.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Our Report LabTask 5</h3>
+        <a href="docs/project3.pdf" target="_blank">View Report (PDF)</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      &copy; DDT4C S2 2024/2025. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>

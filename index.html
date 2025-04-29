@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTMK - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Include jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #1d1d1d;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1d1d1d;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #007BFF, #3399ff);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .hero .btn {
+      background-color: white;
+      color: #007BFF;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .social-sidebar {
+      position: fixed;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-sidebar a {
+      color: white;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .social-sidebar a:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #fff;
+      font-size: 14px;
+      color: #555;
+      margin-top: 50px;
+    }
+
+    /* Right-aligned Navigation Bar */
+    .navbar-right {
+      position: fixed;
+      top: 10%;
+      right: 0;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px 0 0 10px;
+    }
+
+    .navbar-right a {
+      display: block;
+      margin-bottom: 15px;
+      color: #007BFF;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .navbar-right a:hover {
+      color: #0056b3;
+    }
+  </style>
+
+  <!-- Include jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <!-- Main Page Wrapper for jQuery Mobile -->
+  <div data-role="page">
+
+    <!-- Floating Social Media Sidebar -->
+    <div class="social-sidebar">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Right-Aligned Navigation Bar -->
+    <div class="navbar-right">
+      <a href="index.html" data-role="button">HOME</a>
+      <a href="about.html" data-role="button">ABOUT</a>
+      <a href="projects.html" data-role="button">PROJECTS</a>
+      <a href="contact.html" data-role="button">CONTACT</a>
+    </div>
+
+    <!-- Header -->
+    <div data-role="header">
+      <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyv4Nw0BIjqcgF-J1VsyBbg3NfMots20uQQ&s" alt="JTMK Logo">
+        JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>HEY, MY NAME IS JTMK</h1>
+      <p>
+        JTMK is the Department of Information and Communication Technology (JTMK)
+        offering DDT courses (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP).
+      </p>
+      <a href="projects.html" class="btn">PROJECTS</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; DDT4C S2 2024/2025. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
